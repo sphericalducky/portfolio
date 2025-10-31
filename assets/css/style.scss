@@ -4,12 +4,30 @@
 @import "minimal";
 
 /* Make the logo/profile image circular */
-.sidebar .view img {
+header img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
   border: 3px solid #ddd;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* Move title below the image and center it */
+header h1 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Center the description text */
+header p {
+  text-align: center;
+}
+
+/* Hide the GitHub project link */
+footer p:first-child {
+  display: none;
 }
 
 /* Alternative selector in case the above doesn't work */
@@ -19,4 +37,6 @@ img[src*="ShreyaSharma"] {
   height: 150px;
   object-fit: cover;
   border: 3px solid #ddd;
+  display: block;
+  margin: 0 auto 15px auto;
 }
