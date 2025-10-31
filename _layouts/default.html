@@ -27,6 +27,25 @@
           <p>{{ site.description | markdownify | strip_html }}</p>
         {% endif %}
 
+        <!-- Presentation Images Gallery -->
+        <div class="presentation-gallery">
+          <h3>Presentations & Outreach</h3>
+          <div class="presentation-images">
+            <div class="presentation-item">
+              <img src="/assets/presentations/ucberkeley_conference.jpg" alt="UC Berkeley Conference" />
+              <span class="presentation-caption">UC Berkeley Conference</span>
+            </div>
+            <div class="presentation-item">
+              <img src="/assets/presentations/city_council_presentation.jpg" alt="City Council Presentation" />
+              <span class="presentation-caption">City Council</span>
+            </div>
+            <div class="presentation-item">
+              <img src="/assets/presentations/community_outreach.jpg" alt="Community Outreach" />
+              <span class="presentation-caption">Community Outreach</span>
+            </div>
+          </div>
+        </div>
+
         {% if site.show_downloads %}
           <ul class="downloads">
             <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
